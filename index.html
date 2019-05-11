@@ -3,43 +3,67 @@
 <head> 
 	<meta charset="utf-8"> 
 	<title> CodeReview </title> 
+	<link href="style.css" rel="stylesheet">
+</head>
+
 <body> 
-<header id="header" class="">
-	<img src="img/codefactorylogo.png" alt="CodeFactory Vienna" width="176" height="60%">
+<header> <!--Logo und Schrift -->
+	<img src ="img/codefactorylogo.png" alt="CodeFactory Vienna">
 	<h1> Stéphie L'or - I am a future Full Stack Web Developer </h1>
 </header>
 
-<nav>
-    <ul>
-	<li><a href="home">HOME</a></li>
-	<li><a href="aboutme">ABOUT ME</a></li>
-	<li><a href="blog">BLOG</a></li>
-	<li><a href="contact">CONTACT</a></li>
-	</ul>
-</nav>
+<div>
+	<!-- navigation -->
+	<nav>
+    	<ul>
+			<li><a href="home">HOME</a></li>
+			<li><a href="aboutme">ABOUT ME</a></li>
+			<li><a href="blog">BLOG</a></li>
+			<li><a href="contact">CONTACT</a></li>
+		</ul>
+	</nav>
+</div>
+
+<section> <!-- Zweite Schrift -->
+    <div id="banner">
+        <p> This is my first <br> website :) <p>
+    </div>
+</section>
 
 <section> 
-<div>
-	<div> <img src="img/phone.png" alt="Phone">
-			<P> Location marketing platform Uberall raises further $25M and acquires competitor Navads </P>
-	</div>
-	<div> <img src="img/TaxifyScooters.jpg" alt="Taxify Scooter">
-			<p> Taxify is entering the e-scooter game </p>
-	</div>
-	<div> <img src="img/devices.jpg" alt="Devices">
-			<p> Livongo Health expands under new offering with Abbott Labs </p>
-	</div>
-	<div> <img src="img/DebitcardATM.jpg" alt="Debitcard ATM">
-			<p> European banking app Monese scores $60M Series B led by Kinnevik </p>
-	</div>
+
+<div id="latest">
+	<p> <!--class="latest"-->LATEST BLOG POSTS </p>
 </div>
+
+<div class="imgs_box"><!--id="top_imgs" class="imgs_box"--> <!-- Articles -->
+	<figure> <img src="img/phone.png" alt="Phone">
+			<figcaption>Location marketing platform Uberall <br>raises further $25M and acquires compet- <br>itor Navads </figcaption>
+	</figure>
+	<figure> <img src="img/TaxifyScooters.jpg" alt="Taxify Scooter">
+			<figcaption> Taxify is entering the e-scooter game </figcaption>
+	</figure>
+</div>
+
+<div class="imgs_box"> <!--id="bottom_imgs" class="imgs_box"-->
+	<figure> <img src="img/devices.jpg" alt="Devices">
+			<figcaption>Livongo Health expands under new offer<br>ing with Abbott Labs</figcaption>
+	</figure>
+	<figure> <img src="img/DebitcardATM.jpg" alt="Debitcard ATM">
+			<figcaption>European banking app Monese scores <br> $60M Series B led by Kinnevik </figcaption>
+	</figure>
+</div>
+
 </section>
-<footer> 
+
+<!--<hr>-->
+
+<footer>
 	<figure>
-      <img src="img/codefactorylogo.png" alt="CodeFactory Vienna" width="176" height="60%">
+      <img src="img/codefactorylogo.png" alt="CodeFactory Vienna">
       <figcaption>Stéphie L'or - CodeFactory 2019</figcaption>
     </figure>
 </footer>
+
 </body> 
-</head>
 </html>
