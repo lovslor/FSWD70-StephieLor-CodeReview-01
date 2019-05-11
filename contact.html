@@ -16,7 +16,7 @@
       <ul>
       <li><a href="home">HOME</a></li>
       <li><a href="about.html">ABOUT ME</a></li>
-      <li><a href="blog">BLOG</a></li>
+      <li><a href="blog.html">BLOG</a></li>
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
@@ -26,7 +26,8 @@
   <h1 class="contact"> CONTACT ME </h1>
   <h2> PLEASE COMPLETE THE FORM BELOW </h2>
 
-    <form action="action_page.php">
+   <div class="form"> <form action="action_page.php">
+      <!--
       First name:<br>
       <input type="text" name="firstname" placeholder="First name"><br>
       Last name:<br>
@@ -38,8 +39,22 @@
       <input type="text" name="yourmessage" placeholder="Your Message"><br>
       Tell us something about you:<br>
       <textarea name="message" rows="10" cols="30"></textarea>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit">-->
+      <label for="name"> Your Name </label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+
+          <label for="email"> Your Email </label>
+          <input type="email" name="_replyto" id="email" placeholder="Email" />
+
+          <label for="phone"> Your Phone Number </label>
+          <input type="tel" name="phone" id="phone" placeholder="+(Country Code) Phone Number" />
+          <label for="message"> Tell me everything about you... </label>
+          <textarea name="message" id="message" placeholder="Hey I'm Joe and I want to learn to code..."></textarea>
+
+          <input type="submit" value="Submit" class="button" />
+        
     </form>
+  </div>
  
 </section>
 
